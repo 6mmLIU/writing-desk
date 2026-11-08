@@ -1,8 +1,8 @@
 # 主理人写作台
 
-一个给内容创作者用的写作工作台：自己写、让 AI 写、划线批注让 AI 只改你划过的地方，把你纠正过的错误记下来，下次不再犯。笔记就是普通的 `.md` 文件，可以直接用 Obsidian 打开。
+**中文** | [English](README.en.md)
 
-A writing desk for content creators (macOS app + web page). Write yourself or let AI draft; highlight a passage and tell the AI exactly what to change; corrections become "memories" so the same mistake never comes back. Notes are plain Markdown files, Obsidian-compatible. AI runs on your own Claude or OpenAI-compatible API key (DeepSeek, Kimi, Qwen…). The UI is in Chinese.
+一个给内容创作者用的写作工作台：自己写、让 AI 写、划线批注让 AI 只改你划过的地方，把你纠正过的错误记下来，下次不再犯。笔记就是普通的 `.md` 文件，可以直接用 Obsidian 打开。
 
 ![写作页](docs/screenshots/desk.png)
 
