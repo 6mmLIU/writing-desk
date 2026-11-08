@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# 自己的品牌人物、素材：不公开（构建 Mac App 时会叠加进去）
+private/

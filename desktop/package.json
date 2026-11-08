@@ -1,0 +1,53 @@
+{
+  "name": "writing-desk",
+  "productName": "主理人写作台",
+  "version": "0.8.4",
+  "description": "写作、批注改稿、写作记忆与品牌人物配图的 Mac App",
+  "license": "MIT",
+  "author": "6mmLIU",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/6mmLIU/writing-desk.git"
+  },
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "web": "node build-web.mjs",
+    "start": "node build-web.mjs && electron .",
+    "dist": "node build-web.mjs && electron-builder --mac --arm64",
+    "pack": "node build-web.mjs && electron-builder --mac --arm64 --dir"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.135.0",
+    "yaml": "2.9.1"
+  },
+  "devDependencies": {
+    "electron": "44.8.0",
+    "electron-builder": "26.17.0"
+  },
+  "build": {
+    "appId": "com.zhuliren.writing-desk",
+    "productName": "主理人写作台",
+    "files": [
+      "main.js",
+      "preload.js",
+      "vault.js",
+      "ai.js",
+      "web/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": [
+        "dmg",
+        "dir"
+      ],
+      "icon": "build/icon.icns",
+      "identity": "-",
+      "hardenedRuntime": false
+    },
+    "dmg": {
+      "title": "主理人写作台"
+    }
+  }
+}
